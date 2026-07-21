@@ -19,4 +19,4 @@ BreadSaver is a zero-based budgeting app designed to help you tell your money wh
 - [Privacy Policy](breadsaver-privacy)
 - [Terms of Service](breadsaver-terms)
 
-For any issues or inquiries, contact us at [support@eutopiantech.com](mailto:support@eutopiantech.com).
+For any issues or inquiries, contact us at [dev@eutopiantech.com](mailto:dev@eutopiantech.com).

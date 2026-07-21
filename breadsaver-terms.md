@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Last updated: April 17, 2026**
+**Last updated: July 21, 2026**
 
 Please read these Terms of Service ("Terms") carefully before using BreadSaver ("the App", "Service") operated by Eutopian Technologies ("we", "us", "our"). By downloading, installing, or using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.
 
@@ -16,7 +16,7 @@ By accessing or using BreadSaver, you confirm that you are at least 13 years of 
 
 BreadSaver is a personal budgeting and financial management application that allows users to track income, expenses, savings goals, and scheduled transactions. The App is available on Android and iOS platforms.
 
-We offer a **Free plan** with limited features and a **Pro plan** with full access to all features, available via monthly or yearly subscription, and a **Lifetime plan** available as a one-time purchase.
+We offer a **Free plan** with limited features and a **Pro plan** with full access to all features, available via monthly or yearly auto-renewing subscription.
 
 ---
 
@@ -26,7 +26,7 @@ You must create an account to use BreadSaver. You agree to:
 
 - Provide accurate, current, and complete information during registration
 - Maintain the security of your password and accept responsibility for all activity under your account
-- Notify us immediately at support@eutopiantech.com if you suspect unauthorized access
+- Notify us immediately at dev@eutopiantech.com if you suspect unauthorized access
 - Not create accounts using automated means or under false pretenses
 
 We reserve the right to suspend or terminate accounts that violate these Terms.
@@ -37,7 +37,7 @@ We reserve the right to suspend or terminate accounts that violate these Terms.
 
 ### 4.1 Paid Plans
 
-Pro subscriptions are billed on a monthly or yearly basis. Lifetime access is a one-time purchase. All prices are displayed in your local currency at the time of purchase.
+Pro subscriptions are billed on a monthly or yearly recurring basis. On iOS, billing is handled by Apple (StoreKit); on Android, billing is handled by Google Play; if you subscribe through our website, billing is handled by Paystack. All prices are displayed in your local currency at the time of purchase.
 
 ### 4.2 Free Trial
 
@@ -45,11 +45,11 @@ We may offer free trials at our discretion. At the end of a trial period, your s
 
 ### 4.3 Renewals
 
-Subscriptions renew automatically at the end of each billing cycle. You may cancel auto-renewal at any time through your account settings or your platform's subscription management (Google Play / App Store).
+Subscriptions renew automatically at the end of each billing cycle. If you subscribed through the App Store or Google Play, you must cancel auto-renewal through your platform's subscription management (Settings → Apple ID → Subscriptions, or the Google Play app) — we cannot cancel these subscriptions on your behalf. If you subscribed through our website (Paystack), you may cancel from within the App.
 
 ### 4.4 Refunds
 
-Refund requests are handled in accordance with the refund policies of the platform through which you subscribed (Google Play Store or Apple App Store). We do not process refunds directly. For issues not covered by platform policies, contact us at support@eutopiantech.com.
+Refund requests for subscriptions purchased through the App Store or Google Play are handled in accordance with the refund policies of that platform. We do not process refunds for platform-billed subscriptions directly. For subscriptions purchased through our website (Paystack) or for issues not covered by platform policies, contact us at dev@eutopiantech.com.
 
 ### 4.5 Price Changes
 
@@ -95,15 +95,15 @@ We grant you a limited, non-exclusive, non-transferable, revocable license to us
 
 Your financial data entered into the App is stored securely on Firebase (Google Cloud infrastructure). You retain full ownership of your data. We do not sell your personal financial data to third parties.
 
-Please refer to our [Privacy Policy](PRIVACY_POLICY.md) for full details on how we collect, use, and protect your data.
+Please refer to our [Privacy Policy](breadsaver-privacy) for full details on how we collect, use, and protect your data.
 
 ### Data Export
 
-You may request an export of all your data at any time through the App's settings. We will provide your data in a machine-readable format within a reasonable timeframe.
+You may request an export of all your data at any time through the App's settings. We will generate a machine-readable export file, which is automatically deleted 24 hours after creation.
 
 ### Account Deletion
 
-You may delete your account at any time through the App. Upon deletion, all your personal data and budget records are permanently removed from our servers within 30 days.
+You may delete your account at any time through the App. Deletion is processed immediately: your personal data and budget records are permanently removed from our servers as part of that request. If you have an active subscription billed through the App Store or Google Play, you must cancel it through that platform first — we cannot cancel platform-billed subscriptions on your behalf.
 
 ---
 
@@ -123,9 +123,11 @@ We will notify users of material changes via email or in-app notification.
 
 BreadSaver uses the following third-party services to operate:
 
-- **Firebase** (Google) — authentication, database, and cloud functions
-- **Paystack** — payment processing for subscriptions
-- **Apple In-App Purchase** — payment processing on iOS
+- **Firebase** (Google) — authentication, database, cloud functions, and crash reporting
+- **Apple In-App Purchase (StoreKit)** — payment processing on iOS
+- **Google Play Billing** — payment processing on Android
+- **Paystack** — payment processing for subscriptions purchased through our website
+- **Resend** — transactional email delivery
 
 Your use of these services is subject to their respective terms and privacy policies. We are not responsible for the practices or content of third-party services.
 
@@ -181,5 +183,5 @@ We reserve the right to update these Terms at any time. We will notify you of si
 If you have any questions about these Terms, please contact us:
 
 **Eutopian Technologies**
-Email: support@eutopiantech.com
+Email: dev@eutopiantech.com
 Website: https://eutopiantech.com
